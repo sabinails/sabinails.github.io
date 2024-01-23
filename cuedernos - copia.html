@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html ng-app="aplicacion">
+<head></head>
+	<script type="text/javascript" src="angular-1.6.9/angular.js"></script>
+	<script type="text/javascript" src="angular-1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="cuedernos.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widht=divice-widht,initial-scale">
+	<title></title>
+	<style type="text/css">
+		body{
+	background: url(cinco.png);
+	background-size: 150px;
+}
+    .tres{
+		width: 500px;
+		height: 300px;
+		margin-top: -30px;
+	}
+	.dos{	
+		
+		width: 60%;
+		background-image: linear-gradient(360deg, #73a9ad  16.67%, #95bdff 66.69%, #c9bbcf 100%);
+		border-radius: 80px;
+		border: 30px;
+		border-style: groove;
+		border-color: #f6ae99;
+	}
+	h5{
+		font-size: 30px;
+		font-family: cursive;
+	margin: 0;
+	}
+	input{
+		width: 300px;
+		height: 30px;
+		border-style: ridge;
+		border-color: #ffc6ac;
+		margin-top: -500px;
+	}
+	.uno{
+		font-family: cursive;
+		font-size: 30px;
+	}
+	img{
+		width: 300px;
+		height: 200px;
+		border-radius: 20px;
+	}
+	button{
+		width: 500px;
+		height: 70px;
+		background-image: linear-gradient(360deg, #73a9ad  16.67%, #95bdff 66.69%, #c9bbcf 100%);
+		border-radius: 80px;
+		border: 15px;
+		border-style: groove;
+		border-color: #f6ae99;
+	}
+	@media(max-width: 800px){
+		body{
+	background: #000000;
+}
+.m1{
+	width: 100%;
+	height: 280px;
+}
+.m{
+	width: 170px;
+	height: 150px;
+	border: 0;
+
+}
+    .tres{
+		width: 290px;
+		height: 110px;
+		margin-top: 10PX;
+		border-radius: 50px;
+		margin-left: -15PX;
+
+	}
+	.m2{
+		width: 60px;
+	height: 60px;
+	margin: 0;
+	border: 0;
+	}
+	.dos{
+		width: 85%;
+		background: #000000;
+		border: 0;
+		color: white;
+
+	}
+	
+	h2{
+		color: #FF8F8F;
+	}
+	input{
+		width: 250px;
+		height: 30px;
+		border-style: ridge;
+		border-color: #ffc6ac;
+		margin-top: 10px;
+	}
+	.uno{
+		font-family: cursive;
+		font-size: 30px;
+	}
+	img{
+		width: 200px;
+		height: 200px;
+		border-radius: 20px;
+		border: 15px;
+		border-style: groove;
+		border-color: #FF8F8F;
+	}
+	}
+	
+	</style>
+<body>
+	<center>
+	<center>
+	<div class="m1">
+		<img class="m" src="m2.png">
+		<h2 style="margin: 0; ">NUESTRAS REDES SOCIALES:</h2>
+			<center>
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2Fmessage%2F4HZTXTKWYC2IN1%3Ffbclid%3DIwAR1q8mmaniMJ7kBey0Po1t5TZfcr08qqpE80Ab6Xdv3RWGvkBRsAlydgpeY&h=AT0RGzeQdGqLKNbK8GQ91nPa9MVyZdMGecstssgKLH5hTIqVyzQ9cJH-mYyoathgJum_LbX1zLkogzOck6yMe6_w5DKoZVh5a40mKEfKVAu-XVVbezzDQSK8gNMkbVnA1cpbTQ"><img class="m2" src="1.png"></a>
+			<a href="https://www.facebook.com/profile.php?id=100069280104732&mibextid=ZbWKwL"><img class="m2" src="2.png"></a>
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsabi.nails.store.2023%3Figsh%3DMW5qYjF4emdqbW0yYw%253D%253D%26fbclid%3DIwAR1ks5VVSubfhfxtLC45lRdWn821dU3fWqbrSCMuR3vNQyskhIsWQxTY0sQ&h=AT0RGzeQdGqLKNbK8GQ91nPa9MVyZdMGecstssgKLH5hTIqVyzQ9cJH-mYyoathgJum_LbX1zLkogzOck6yMe6_w5DKoZVh5a40mKEfKVAu-XVVbezzDQSK8gNMkbVnA1cpbTQ"><img class="m2" src="3.png"></a>
+			<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40sabi.store.nails%3F_t%3D8ilObWnh6jF%26_r%3D1%26fbclid%3DIwAR3oqIkO_9XaVIFxxE8N9V2KPpulfigoXy7Z6OxEjtbOTi8h7xVT514jqfg&h=AT0RGzeQdGqLKNbK8GQ91nPa9MVyZdMGecstssgKLH5hTIqVyzQ9cJH-mYyoathgJum_LbX1zLkogzOck6yMe6_w5DKoZVh5a40mKEfKVAu-XVVbezzDQSK8gNMkbVnA1cpbTQ"><img class="m2" src="4.png"></a>
+		</center>
+	</div>
+	<div class="dos" ng-controller="controller">
+		
+	
+	<h2>INGRESE EL PRODUCTO QUE DESEA BUSCAR:</h2>
+	<input type="text" ng-model="busqueda">
+	<div class="uno" ng-repeat="variable in uno | filter: busqueda"> 
+		{{variable.marca}}
+		<img src="{{variable.imagen}}">
+	</div>
+	<br>
+	<br>
+	
+</div>
+</center>
+</body>
+</html>
